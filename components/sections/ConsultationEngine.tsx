@@ -161,13 +161,13 @@ export function ConsultationEngine() {
                                 </SelectTrigger>
                               </FormControl>
                               <SelectContent className="bg-onyx border-carbon text-titanium rounded-none">
-                                <SelectItem value="ferrari" className="focus:bg-carbon focus:text-[#10FF00] uppercase">FERRARI</SelectItem>
-                                <SelectItem value="lamborghini" className="focus:bg-carbon focus:text-[#10FF00] uppercase">LAMBORGHINI</SelectItem>
-                                <SelectItem value="rolls-royce" className="focus:bg-carbon focus:text-[#10FF00] uppercase">ROLLS-ROYCE</SelectItem>
-                                <SelectItem value="bentley" className="focus:bg-carbon focus:text-[#10FF00] uppercase">BENTLEY</SelectItem>
-                                <SelectItem value="mclaren" className="focus:bg-carbon focus:text-[#10FF00] uppercase">MCLAREN</SelectItem>
-                                <SelectItem value="porsche" className="focus:bg-carbon focus:text-[#10FF00] uppercase">PORSCHE</SelectItem>
-                                <SelectItem value="other" className="focus:bg-carbon focus:text-[#10FF00] uppercase">OTHER MANUFACTURER</SelectItem>
+                                <SelectItem value="FERRARI" className="focus:bg-carbon focus:text-[#10FF00] uppercase">FERRARI</SelectItem>
+                                <SelectItem value="LAMBORGHINI" className="focus:bg-carbon focus:text-[#10FF00] uppercase">LAMBORGHINI</SelectItem>
+                                <SelectItem value="ROLLS-ROYCE" className="focus:bg-carbon focus:text-[#10FF00] uppercase">ROLLS-ROYCE</SelectItem>
+                                <SelectItem value="BENTLEY" className="focus:bg-carbon focus:text-[#10FF00] uppercase">BENTLEY</SelectItem>
+                                <SelectItem value="MCLAREN" className="focus:bg-carbon focus:text-[#10FF00] uppercase">MCLAREN</SelectItem>
+                                <SelectItem value="PORSCHE" className="focus:bg-carbon focus:text-[#10FF00] uppercase">PORSCHE</SelectItem>
+                                <SelectItem value="OTHER" className="focus:bg-carbon focus:text-[#10FF00] uppercase">OTHER MANUFACTURER</SelectItem>
                               </SelectContent>
                             </Select>
                             <FormMessage className="text-destructive text-xs" />
