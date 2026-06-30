@@ -68,7 +68,7 @@ export function ConsultationEngine() {
           <Card className="bg-onyx border border-carbon rounded-none">
             <div className="border-b border-carbon p-8 md:p-12 bg-carbon/30">
               <h2 className="font-heading text-2xl md:text-3xl text-titanium uppercase tracking-tight">
-                Schedule <span className="text-acid-green">Service</span>
+                Schedule <span className="text-[#10FF00]">Service</span>
               </h2>
               <p className="text-grey-bore mt-2 font-mono text-xs tracking-widest uppercase">
                 Request an Appointment
@@ -82,8 +82,8 @@ export function ConsultationEngine() {
                   animate={{ opacity: 1, y: 0 }}
                   className="flex flex-col items-center justify-center text-center h-full space-y-6"
                 >
-                  <div className="w-16 h-16 rounded-full border border-acid-green flex items-center justify-center">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-acid-green"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <div className="w-16 h-16 rounded-full border border-[#10FF00] flex items-center justify-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#10FF00]"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   </div>
                   <h3 className="font-heading text-xl md:text-2xl text-titanium uppercase">Request Received</h3>
                   <p className="text-grey-bore max-w-md text-sm leading-relaxed">
@@ -91,7 +91,7 @@ export function ConsultationEngine() {
                   </p>
                   <Button 
                     variant="outline" 
-                    className="mt-4 border-carbon text-titanium hover:border-acid-green hover:text-acid-green rounded-none"
+                    className="mt-4 border-carbon text-titanium hover:border-[#10FF00] hover:text-[#10FF00] rounded-none"
                     onClick={() => {
                       setIsSubmitted(false);
                       form.reset();
@@ -111,7 +111,7 @@ export function ConsultationEngine() {
                           <FormItem>
                             <FormLabel className="text-titanium text-xs uppercase tracking-widest">Full Name</FormLabel>
                             <FormControl>
-                              <Input placeholder="JOHN DOE" {...field} className="bg-carbon border-white/10 text-titanium focus-visible:ring-acid-green focus-visible:border-acid-green rounded-none h-12 uppercase" />
+                              <Input placeholder="JOHN DOE" {...field} className="bg-carbon border-white/10 text-titanium focus-visible:ring-[#10FF00] focus-visible:border-[#10FF00] rounded-none h-12 uppercase" />
                             </FormControl>
                             <FormMessage className="text-destructive text-xs" />
                           </FormItem>
@@ -125,7 +125,7 @@ export function ConsultationEngine() {
                           <FormItem>
                             <FormLabel className="text-titanium text-xs uppercase tracking-widest">Phone Number</FormLabel>
                             <FormControl>
-                              <Input placeholder="(555) 555-5555" {...field} className="bg-carbon border-white/10 text-titanium focus-visible:ring-acid-green focus-visible:border-acid-green rounded-none h-12 uppercase" />
+                              <Input placeholder="(555) 555-5555" {...field} className="bg-carbon border-white/10 text-titanium focus-visible:ring-[#10FF00] focus-visible:border-[#10FF00] rounded-none h-12 uppercase" />
                             </FormControl>
                             <FormMessage className="text-destructive text-xs" />
                           </FormItem>
@@ -141,7 +141,7 @@ export function ConsultationEngine() {
                           <FormItem>
                             <FormLabel className="text-titanium text-xs uppercase tracking-widest">Email Address</FormLabel>
                             <FormControl>
-                              <Input placeholder="JOHN@EXAMPLE.COM" {...field} className="bg-carbon border-white/10 text-titanium focus-visible:ring-acid-green focus-visible:border-acid-green rounded-none h-12 uppercase" />
+                              <Input placeholder="JOHN@EXAMPLE.COM" {...field} className="bg-carbon border-white/10 text-titanium focus-visible:ring-[#10FF00] focus-visible:border-[#10FF00] rounded-none h-12 uppercase" />
                             </FormControl>
                             <FormMessage className="text-destructive text-xs" />
                           </FormItem>
@@ -156,15 +156,18 @@ export function ConsultationEngine() {
                             <FormLabel className="text-titanium text-xs uppercase tracking-widest">Manufacturer</FormLabel>
                             <Select onValueChange={field.onChange} defaultValue={field.value}>
                               <FormControl>
-                                <SelectTrigger className="bg-carbon border-white/10 text-titanium focus:ring-acid-green focus:border-acid-green rounded-none h-12">
+                                <SelectTrigger className="bg-carbon border-white/10 text-titanium focus:ring-[#10FF00] focus:border-[#10FF00] rounded-none h-12">
                                   <SelectValue placeholder="SELECT MANUFACTURER" />
                                 </SelectTrigger>
                               </FormControl>
                               <SelectContent className="bg-onyx border-carbon text-titanium rounded-none">
-                                <SelectItem value="ferrari" className="focus:bg-carbon focus:text-acid-green uppercase">FERRARI</SelectItem>
-                                <SelectItem value="lamborghini" className="focus:bg-carbon focus:text-acid-green uppercase">LAMBORGHINI</SelectItem>
-                                <SelectItem value="rolls-royce" className="focus:bg-carbon focus:text-acid-green uppercase">ROLLS-ROYCE</SelectItem>
-                                <SelectItem value="other" className="focus:bg-carbon focus:text-acid-green uppercase">OTHER MANUFACTURER</SelectItem>
+                                <SelectItem value="ferrari" className="focus:bg-carbon focus:text-[#10FF00] uppercase">FERRARI</SelectItem>
+                                <SelectItem value="lamborghini" className="focus:bg-carbon focus:text-[#10FF00] uppercase">LAMBORGHINI</SelectItem>
+                                <SelectItem value="rolls-royce" className="focus:bg-carbon focus:text-[#10FF00] uppercase">ROLLS-ROYCE</SelectItem>
+                                <SelectItem value="bentley" className="focus:bg-carbon focus:text-[#10FF00] uppercase">BENTLEY</SelectItem>
+                                <SelectItem value="mclaren" className="focus:bg-carbon focus:text-[#10FF00] uppercase">MCLAREN</SelectItem>
+                                <SelectItem value="porsche" className="focus:bg-carbon focus:text-[#10FF00] uppercase">PORSCHE</SelectItem>
+                                <SelectItem value="other" className="focus:bg-carbon focus:text-[#10FF00] uppercase">OTHER MANUFACTURER</SelectItem>
                               </SelectContent>
                             </Select>
                             <FormMessage className="text-destructive text-xs" />
@@ -182,7 +185,7 @@ export function ConsultationEngine() {
                           <FormControl>
                             <Textarea 
                               placeholder="DESCRIBE SPECIFIC MECHANICAL ISSUES OR REQUESTED SERVICES..." 
-                              className="resize-none bg-carbon border-white/10 text-titanium focus-visible:ring-acid-green focus-visible:border-acid-green rounded-none min-h-[120px] uppercase" 
+                              className="resize-none bg-carbon border-white/10 text-titanium focus-visible:ring-[#10FF00] focus-visible:border-[#10FF00] rounded-none min-h-[120px] uppercase" 
                               {...field} 
                             />
                           </FormControl>
@@ -191,7 +194,7 @@ export function ConsultationEngine() {
                       )}
                     />
 
-                    <Button type="submit" className="w-full bg-acid-green text-onyx font-heading uppercase tracking-widest hover:bg-acid-green/90 rounded-none h-14 text-sm">
+                    <Button type="submit" className="w-full bg-[#10FF00] text-onyx font-heading uppercase tracking-widest hover:bg-[#10FF00]/90 rounded-none h-14 text-sm">
                       Book Appointment
                     </Button>
                   </form>

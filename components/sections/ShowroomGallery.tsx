@@ -13,7 +13,7 @@ export function ShowroomGallery() {
       <div className="container mx-auto">
         <div className="mb-12">
           <h2 className="font-heading text-3xl md:text-4xl text-titanium uppercase tracking-tight">
-            Our <span className="text-acid-green">Showroom</span>
+            Our <span className="text-[#10FF00]">Showroom</span>
           </h2>
           <p className="text-grey-bore mt-4 max-w-xl">
             A look into our pristine clinical service environment.

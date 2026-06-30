@@ -10,7 +10,7 @@ import { MobileCTA } from "@/components/sections/MobileCTA";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#050505] text-[#F1F5F9] antialiased selection:bg-[#10FF00] selection:text-black">
+    <main className="min-h-screen bg-[#050505] text-[#F1F5F9] antialiased selection:bg-[#10FF00] selection:text-black pb-14 lg:pb-0">
       <Nav/>
       <Hero/>
       <SupercarVault/>

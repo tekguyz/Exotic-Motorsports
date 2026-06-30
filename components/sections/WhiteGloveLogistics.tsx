@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { LOGISTICS_WORKFLOW } from "@/lib/constants";
+import { LOGISTICS_STEPS } from "@/lib/constants";
 
 export function WhiteGloveLogistics() {
   return (
@@ -10,7 +10,7 @@ export function WhiteGloveLogistics() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
           <div>
             <h2 className="font-heading text-3xl md:text-4xl text-titanium uppercase tracking-tight">
-              ASSET <span className="text-acid-green">PROTECTION</span> WORKFLOW
+              ASSET <span className="text-[#10FF00]">PROTECTION</span> WORKFLOW
             </h2>
             <p className="text-grey-bore mt-4 max-w-xl">
               Strict guidelines governing the handling, evaluation, and execution of service for high-value vehicles.
@@ -22,7 +22,7 @@ export function WhiteGloveLogistics() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 border border-carbon">
-          {LOGISTICS_WORKFLOW.map((step, idx) => (
+          {LOGISTICS_STEPS.map((step, idx) => (
             <motion.div
               key={step.step}
               initial={{ opacity: 0, y: 20 }}
@@ -31,9 +31,9 @@ export function WhiteGloveLogistics() {
               transition={{ duration: 0.5, delay: idx * 0.15 }}
               className="group relative p-8 md:p-12 border-b lg:border-b-0 lg:border-r border-carbon last:border-0 bg-onyx hover:bg-carbon transition-colors duration-500"
             >
-              <div className="absolute top-0 left-0 w-full h-1 bg-acid-green scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
+              <div className="absolute top-0 left-0 w-full h-1 bg-[#10FF00] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
               
-              <div className="font-heading text-6xl text-titanium/5 mb-8 group-hover:text-acid-green/10 transition-colors">
+              <div className="font-heading text-6xl text-titanium/5 mb-8 group-hover:text-[#10FF00]/10 transition-colors">
                 {step.step}
               </div>
               

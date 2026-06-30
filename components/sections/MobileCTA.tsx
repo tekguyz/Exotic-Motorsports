@@ -32,7 +32,7 @@ export function MobileCTA() {
         >
           <a 
             href={CONTACT_INFO.phoneLink}
-            className="flex items-center justify-center gap-2 w-full bg-acid-green text-black font-bold h-14 uppercase tracking-wider rounded-md active:scale-95 transition-transform"
+            className="flex items-center justify-center gap-2 w-full bg-[#10FF00] text-black font-bold h-14 uppercase tracking-wider rounded-md active:scale-95 transition-transform"
           >
             <PhoneCall className="w-5 h-5" />
             <span>Call Now</span>

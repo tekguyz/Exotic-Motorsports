@@ -27,6 +27,15 @@ export function Nav() {
     { name: "Location", href: "#location" },
   ];
 
+  const scrollToAppointment = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    setIsMobileMenuOpen(false);
+    const element = document.getElementById("appointment-section");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <header className="sticky top-0 z-50 w-full border-b border-white/5 bg-onyx/80 backdrop-blur-md">
@@ -34,13 +43,13 @@ export function Nav() {
           
           {/* Left Block: Logo vector & text */}
           <Link href="/" className="flex items-center gap-3 group relative z-50">
-            <svg width="40" height="24" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-acid-green transition-transform group-hover:scale-105 w-8 h-5 md:w-10 md:h-6">
+            <svg width="40" height="24" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#10FF00] transition-transform group-hover:scale-105 w-8 h-5 md:w-10 md:h-6">
               <path d="M10 50L30 20H70L90 50H75L60 28H40L25 50H10Z" fill="currentColor"/>
               <path d="M35 50L45 35H55L65 50H35Z" fill="currentColor" className="text-titanium"/>
             </svg>
             <div className="flex flex-col">
               <span className="font-heading text-lg md:text-xl uppercase tracking-tighter text-titanium leading-none">EXOTIC</span>
-              <span className="font-heading text-[10px] md:text-xs uppercase tracking-widest text-acid-green leading-none">MOTORSPORTS</span>
+              <span className="font-heading text-[10px] md:text-xs uppercase tracking-widest text-[#10FF00] leading-none">MOTORSPORTS</span>
             </div>
           </Link>
           
@@ -50,7 +59,7 @@ export function Nav() {
               <a 
                 key={link.name} 
                 href={link.href} 
-                className="text-xs font-mono tracking-widest uppercase text-grey-bore hover:text-acid-green transition-colors"
+                className="text-xs font-mono tracking-widest uppercase text-grey-bore hover:text-[#10FF00] transition-colors"
               >
                 {link.name}
               </a>
@@ -59,18 +68,18 @@ export function Nav() {
 
           {/* Right Block: Actions */}
           <div className="hidden md:flex items-center gap-6">
-            <a href={CONTACT_INFO.phoneLink} className="flex items-center gap-2 text-sm font-medium text-titanium hover:text-acid-green transition-colors">
+            <a href={CONTACT_INFO.phoneLink} className="flex items-center gap-2 text-sm font-medium text-titanium hover:text-[#10FF00] transition-colors">
               <PhoneCall className="h-4 w-4" />
               <span>{CONTACT_INFO.phone}</span>
             </a>
-            <a href="#consultation" className="bg-acid-green text-onyx font-semibold hover:bg-acid-green/90 rounded-none uppercase tracking-wide text-xs px-6 py-4 inline-flex items-center justify-center transition-colors min-h-[44px]">
-              BOOK APPOINTMENT
+            <a href="#appointment-section" onClick={scrollToAppointment} className="bg-[#10FF00] text-onyx font-semibold hover:bg-opacity-90 rounded-md uppercase tracking-wide text-xs px-6 py-4 inline-flex items-center justify-center transition-all min-h-[44px]">
+              SCHEDULE SERVICE
             </a>
           </div>
 
           {/* Mobile Hamburger Toggle */}
           <button 
-            className="md:hidden flex items-center justify-center w-11 h-11 text-titanium relative z-50 hover:text-acid-green transition-colors"
+            className="md:hidden flex items-center justify-center w-11 h-11 text-titanium relative z-50 hover:text-[#10FF00] transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -83,10 +92,10 @@ export function Nav() {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
             className="fixed inset-0 z-40 bg-onyx/95 backdrop-blur-xl md:hidden"
           >
             <div className="flex flex-col h-full justify-center px-8">
@@ -99,7 +108,7 @@ export function Nav() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.1 }}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="font-heading text-4xl text-titanium uppercase tracking-tight hover:text-acid-green transition-colors"
+                    className="font-heading text-4xl text-titanium uppercase tracking-tight hover:text-[#10FF00] transition-colors"
                   >
                     {link.name}
                   </motion.a>
@@ -112,16 +121,16 @@ export function Nav() {
                 transition={{ delay: 0.3 }}
                 className="flex flex-col gap-6 pt-8 border-t border-carbon"
               >
-                <a href={CONTACT_INFO.phoneLink} className="flex items-center gap-3 text-xl font-mono text-acid-green">
+                <a href={CONTACT_INFO.phoneLink} className="flex items-center gap-3 text-xl font-mono text-[#10FF00]">
                   <PhoneCall className="h-5 w-5" />
                   <span>{CONTACT_INFO.phone}</span>
                 </a>
                 <a 
-                  href="#consultation" 
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="bg-acid-green text-onyx font-heading text-sm text-center font-semibold rounded-none uppercase tracking-widest w-full py-4 min-h-[44px]"
+                  href="#appointment-section" 
+                  onClick={scrollToAppointment}
+                  className="bg-[#10FF00] text-onyx font-heading text-sm text-center font-semibold rounded-md uppercase tracking-widest w-full py-4 min-h-[44px]"
                 >
-                  Book Appointment
+                  Schedule Service
                 </a>
               </motion.div>
             </div>

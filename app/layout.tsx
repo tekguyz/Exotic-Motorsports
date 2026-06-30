@@ -22,7 +22,7 @@ export const viewport: Viewport = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en" className={cn("font-sans dark bg-[#050505]", inter.variable, archivoBlack.variable)}>
-      <body className="bg-[#050505] text-titanium min-h-screen antialiased selection:bg-acid-green selection:text-onyx" suppressHydrationWarning>
+      <body className="bg-[#050505] text-titanium min-h-screen antialiased selection:bg-[#10FF00] selection:text-onyx" suppressHydrationWarning>
         {children}
       </body>
     </html>

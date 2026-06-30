@@ -1,74 +1,67 @@
 export const CONTACT_INFO = {
   businessName: "Exotic Motorsports Service Center",
+  legalName: "EXOTIC MOTOR SPORTS",
   phone: "786-606-9493",
-  phoneLink: "tel:786-606-9493",
-  address: "1300 NW 29th Street, Miami, Florida 33142",
-  mapQuery: "1300+NW+29th+St,+Miami,+FL+33142",
-  domain: "theexoticmotorsports.com",
-  url: "https://theexoticmotorsports.com",
-  instagram: "@TheExoticMotorsports",
-  instagramUrl: "https://instagram.com/TheExoticMotorsports"
+  phoneLink: "tel:7866069493",
+  address: "1300 Northwest 29th Street, Miami, FL 33142",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.944203794695!2d-80.2185489!3d25.798858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b1399f0b5d91%3A0x6fb86b59d95f8fa2!2s1300%20NW%2029th%20St%2C%20Miami%2C%20FL%2033142!5e0!3m2!1sen!2sus!4v1719770000000!5m2!1sen!2sus",
+  hours: "Monday – Friday: 09:00 am – 06:00 pm",
+  instagramUrl: "https://www.instagram.com/theexoticmotorsports",
+  instagramHandle: "@TheExoticMotorsports",
+  clientIncentive: "First-Time Client Offer: Receive 10% off your initial comprehensive diagnostic inspection."
 };
 
 export const MANUFACTURERS = [
-  {
-    brand: "Ferrari",
-    description: "Factory-level Leonardo diagnostic tooling and strict adherence to Maranello maintenance protocols.",
-    image: "https://picsum.photos/seed/ferrari/800/600",
-  },
-  {
-    brand: "Lamborghini",
-    description: "Complete TEXA electronic integration, exact specification fluids, and precision V10/V12 mechanical procedures.",
-    image: "https://picsum.photos/seed/lamborghini/800/600",
-  },
-  {
-    brand: "Rolls-Royce",
-    description: "Absolute asset protection, specialized fluid exchanges, and suspension calibration for unparalleled ride quality.",
-    image: "https://picsum.photos/seed/rollsroyce/800/600",
-  }
+  "FERRARI",
+  "LAMBORGHINI",
+  "ROLLS-ROYCE",
+  "BENTLEY",
+  "MCLAREN",
+  "PORSCHE"
 ];
 
-export const SERVICE_PROTOCOLS = [
+export const CORE_SERVICES = [
   {
-    title: "Advanced Diagnostic Services",
-    description: "Leonardo & factory-level software analysis to read complex ECU parameters and clear proprietary fault codes with zero guesswork.",
+    title: "Advanced Diagnostics",
+    description: "Factory-level system analysis to read complex ECU parameters and pinpoint underlying faults with absolute precision.",
     icon: "Activity",
     span: "col-span-1 md:col-span-2 lg:col-span-1"
   },
   {
-    title: "Powertrain & Differential Care",
-    description: "Exact temperature-controlled fluid extractions and high-performance fluid service matching strict manufacturer engineering standards.",
+    title: "Powertrain & Gearbox Care",
+    description: "Exact temperature-controlled fluid extractions and high-performance fluid service matching manufacturer engineering standards.",
     icon: "Droplets",
     span: "col-span-1 md:col-span-2"
   },
   {
-    title: "Suspension & Track Optimization",
-    description: "High-precision corner balancing, laser alignment, and active dampening system calibration for surgical street or track compliance.",
+    title: "Chassis Optimization",
+    description: "High-precision wheel balancing, laser tracking alignments, and active suspension dampening system calibration.",
     icon: "Crosshair",
     span: "col-span-1 md:col-span-2 lg:col-span-2"
   },
   {
-    title: "Complete Mechanical Rebuilds",
-    description: "Engine out maintenance, complete carbon-ceramic brake system overhauls, and major component restoration performed by master technicians.",
+    title: "Mechanical Restorations",
+    description: "Engine-out maintenance overhauls, carbon-ceramic brake system replacements, and major assembly restorations.",
     icon: "Wrench",
     span: "col-span-1 md:col-span-2 lg:col-span-1"
   }
 ];
 
-export const LOGISTICS_WORKFLOW = [
+export const LOGISTICS_STEPS = [
   {
     step: "01",
-    title: "Enclosed Transport Logistics",
-    description: "Secure, climate-controlled flatbed logistics across Miami to guarantee absolute exterior protection of your asset from point of origin."
+    title: "Enclosed Asset Transport",
+    description: "Secure, climate-controlled flatbed logistics across Miami guaranteeing absolute protection of your vehicle from point of origin."
   },
   {
     step: "02",
     title: "Clinical Evaluation",
-    description: "In-depth mechanical diagnostics and comprehensive video transparency report sent directly to the owner before any procedure begins."
+    description: "In-depth physical diagnostics and a transparent condition report delivered directly to the owner before any work begins."
   },
   {
     step: "03",
-    title: "Master Tech Execution",
-    description: "Hand-built precision service utilizing strict factory documentation, genuine components, and exact specification torque sequences."
+    title: "Master Technician Execution",
+    description: "Hand-built precision service utilizing strict factory documentation, genuine components, and exact specification torque matching."
   }
 ];
+
