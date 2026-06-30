@@ -67,24 +67,20 @@ export function Hero() {
         </div>
 
         {/* Right Column: High-End Asymmetric Supercar Visual Showcase */}
-        <div className="lg:col-span-5 w-full h-full min-h-[300px] sm:min-h-[400px] lg:min-h-[500px] relative">
+        <div className="lg:col-span-5 w-full aspect-[16/10] sm:aspect-[16/9] lg:aspect-auto lg:h-[450px] xl:h-[500px] relative flex items-center justify-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.98, x: 20 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
-            className="w-full h-full absolute inset-0 rounded-xl overflow-hidden border border-white/10 shadow-2xl bg-carbon"
+            className="w-full h-full relative"
           >
-            {/* Smooth Vignette Overlay to enhance luxury contrast */}
-            <div className="absolute inset-0 bg-gradient-to-t from-onyx via-transparent to-transparent z-10 opacity-60" />
-            <div className="absolute inset-0 bg-gradient-to-r from-onyx/40 to-transparent z-10 lg:block hidden" />
-            
             <Image
               src="/gt3.webp"
-              alt="Luxury Supercar Diagnostic Maintenance Facility"
+              alt="Porsche 911 GT3 RS"
               fill
               priority
               sizes="(max-w-1024px) 100vw, 40vw"
-              className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+              className="object-contain object-center transition-transform duration-700 hover:scale-[1.03]"
             />
           </motion.div>
         </div>
