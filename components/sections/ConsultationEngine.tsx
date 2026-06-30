@@ -167,7 +167,7 @@ export function ConsultationEngine() {
                                 <SelectItem value="BENTLEY" className="focus:bg-carbon focus:text-[#10FF00] uppercase">BENTLEY</SelectItem>
                                 <SelectItem value="MCLAREN" className="focus:bg-carbon focus:text-[#10FF00] uppercase">MCLAREN</SelectItem>
                                 <SelectItem value="PORSCHE" className="focus:bg-carbon focus:text-[#10FF00] uppercase">PORSCHE</SelectItem>
-                                <SelectItem value="OTHER" className="focus:bg-carbon focus:text-[#10FF00] uppercase">OTHER MANUFACTURER</SelectItem>
+                                <SelectItem value="OTHER" className="focus:bg-carbon focus:text-[#10FF00] uppercase">OTHER</SelectItem>
                               </SelectContent>
                             </Select>
                             <FormMessage className="text-destructive text-xs" />

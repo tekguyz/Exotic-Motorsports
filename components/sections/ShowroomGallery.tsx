@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export function ShowroomGallery() {
   const images = [
-    "/carbay.webp",
-    "/ferrariengine.webp",
-    "/ferr.webp",
-    "/l1.webp"
+    { src: "/carbay.webp", alt: "Clinical grade diagnostic and service bay", position: "object-center" },
+    { src: "/ferrariengine.webp", alt: "Ferrari V12 engine clinical level block inspection", position: "object-top" },
+    { src: "/ferr.webp", alt: "High-performance Ferrari service inspection", position: "object-center" },
+    { src: "/l1.webp", alt: "Master technicians specialized service hub", position: "object-center" }
   ];
 
   return (
@@ -21,13 +21,13 @@ export function ShowroomGallery() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {images.map((src, i) => (
+          {images.map((img, i) => (
             <div key={i} className="relative aspect-video rounded-md overflow-hidden border border-white/5 transition-all duration-500">
               <Image 
-                src={src} 
-                alt={`Showroom image ${i + 1}`}
+                src={img.src} 
+                alt={img.alt}
                 fill
-                className="object-cover"
+                className={`object-cover ${img.position}`}
                 referrerPolicy="no-referrer"
               />
             </div>
