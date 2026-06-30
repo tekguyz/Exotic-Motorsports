@@ -2,6 +2,8 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
+import { PhoneCall } from "lucide-react";
+import { CONTACT_INFO } from "@/lib/constants";
 
 export function Hero() {
   const scrollToAppointment = (e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>) => {
@@ -58,10 +60,11 @@ export function Hero() {
               Request Appointment
             </button>
             <a
-              href="tel:7866069493"
-              className="px-8 h-14 border border-white/10 hover:border-white/20 text-titanium font-heading font-bold text-base uppercase tracking-wider active:scale-[0.98] transition-all rounded-md flex items-center justify-center gap-2 bg-carbon/40 backdrop-blur-sm"
+              href={CONTACT_INFO.phoneLink}
+              className="px-8 h-14 border border-white/10 hover:border-[#10FF00]/40 hover:text-[#10FF00] hover:bg-carbon/50 text-titanium font-heading font-bold text-base uppercase tracking-wider active:scale-[0.98] transition-all rounded-md flex items-center justify-center gap-2.5 bg-carbon/20 backdrop-blur-sm transition-colors duration-300"
             >
-              Call Shop: 786.606.9493
+              <PhoneCall className="w-4 h-4 text-[#10FF00] shrink-0" />
+              <span>Call Shop: {CONTACT_INFO.phone}</span>
             </a>
           </motion.div>
         </div>
@@ -79,7 +82,7 @@ export function Hero() {
               alt="Porsche 911 GT3 RS"
               fill
               priority
-              sizes="(max-w-1024px) 100vw, 40vw"
+              sizes="(max-width: 1024px) 100vw, 40vw"
               className="object-contain object-center transition-transform duration-700 hover:scale-[1.03]"
             />
           </motion.div>
