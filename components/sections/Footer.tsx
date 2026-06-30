@@ -16,7 +16,7 @@ export function Footer() {
             <span className="font-heading text-sm uppercase tracking-widest text-acid-green leading-none">MOTORSPORTS</span>
           </Link>
           <p className="text-grey-bore text-sm max-w-sm">
-            Miami's premier clinical service facility for high-net-worth supercar assets. Precision. Experience. Detail.
+            Miami&apos;s premier clinical service facility for high-net-worth supercar assets. Precision. Experience. Detail.
           </p>
           <ul className="flex flex-col gap-4 text-sm text-grey-bore mt-4">
             <li>

@@ -87,7 +87,7 @@ export function ConsultationEngine() {
                   </div>
                   <h3 className="font-heading text-xl md:text-2xl text-titanium uppercase">Request Received</h3>
                   <p className="text-grey-bore max-w-md text-sm leading-relaxed">
-                    Thank you. Your service consultation request has been received. A master technician will review your vehicle's requirements and contact you directly at <span className="text-titanium">{submittedPhone}</span>.
+                    Thank you. Your service consultation request has been received. A master technician will review your vehicle&apos;s requirements and contact you directly at <span className="text-titanium">{submittedPhone}</span>.
                   </p>
                   <Button 
                     variant="outline" 

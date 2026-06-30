@@ -1,6 +1,6 @@
 {
   "name": "Exotic Motorsports Service Center",
-  "description": "Miami's premier clinical service facility for high-net-worth supercar assets. Precision. Experience. Detail.",
+  "description": "Prismatic elite supercar tuning and white-glove clinical maintenance service matrix.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

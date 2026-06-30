@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export function ShowroomGallery() {
   const images = [
-    "https://picsum.photos/seed/exotic1/800/600",
-    "https://picsum.photos/seed/exotic2/800/600",
-    "https://picsum.photos/seed/exotic3/800/600",
-    "https://picsum.photos/seed/exotic4/800/600"
+    "/carbay.webp",
+    "/ferrariengine.webp",
+    "/ferr.webp",
+    "/l1.webp"
   ];
 
   return (
