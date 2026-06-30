@@ -68,7 +68,7 @@ export function Footer() {
 
         {/* Column 3: Google Maps iframe */}
         <div className="flex flex-col h-full w-full">
-          <div className="w-full aspect-video md:aspect-auto md:h-full min-h-[250px] bg-carbon border border-white/5 relative overflow-hidden grayscale contrast-125 hover:grayscale-0 hover:contrast-100 transition-all duration-700">
+          <div className="w-full aspect-video md:aspect-auto md:h-full min-h-[250px] bg-carbon border border-white/5 relative overflow-hidden rounded-md">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.954605988019!2d-80.22271872365288!3d25.79720490895521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6c00cfd02c7%3A0xa12604ce2d914ab!2s1300%20NW%2029th%20St%2C%20Miami%2C%20FL%2033142!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
               className="absolute inset-0 w-full h-full border-0" 

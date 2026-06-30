@@ -22,7 +22,7 @@ export function ShowroomGallery() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {images.map((src, i) => (
-            <div key={i} className="relative aspect-video rounded-md overflow-hidden border border-white/5 grayscale hover:grayscale-0 transition-all duration-500">
+            <div key={i} className="relative aspect-video rounded-md overflow-hidden border border-white/5 transition-all duration-500">
               <Image 
                 src={src} 
                 alt={`Showroom image ${i + 1}`}
