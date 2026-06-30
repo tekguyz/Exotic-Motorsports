@@ -15,18 +15,25 @@ export default function AppleIcon() {
           alignItems: 'center',
           justifyContent: 'center',
           background: '#050505',
+          padding: '24px',
         }}
       >
-        <img
-          src="https://theexoticmotorsports.vercel.app/logo.svg"
-          alt="Exotic Motorsports"
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            borderRadius: '22%',
-          }}
-        />
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 100 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 50L30 20H70L90 50H75L60 28H40L25 50H10Z"
+            fill="#10FF00"
+          />
+          <path
+            d="M35 50L45 35H55L65 50H35Z"
+            fill="#F1F5F9"
+          />
+        </svg>
       </div>
     ),
     { ...size }

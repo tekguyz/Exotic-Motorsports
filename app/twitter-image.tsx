@@ -24,17 +24,37 @@ export default function TwitterImage() {
       >
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundImage: 'linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
         
-        <img
-          src="https://theexoticmotorsports.vercel.app/logo.svg"
-          alt="Exotic Motorsports Logo"
+        <div
           style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
             width: '280px',
             height: '280px',
             marginRight: '60px',
             borderRadius: '24px',
-            border: '2px solid rgba(255, 255, 255, 0.1)',
+            border: '2px solid rgba(16, 255, 0, 0.2)',
+            background: 'rgba(5, 5, 5, 0.8)',
+            padding: '40px',
           }}
-        />
+        >
+          <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 100 60"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 50L30 20H70L90 50H75L60 28H40L25 50H10Z"
+              fill="#10FF00"
+            />
+            <path
+              d="M35 50L45 35H55L65 50H35Z"
+              fill="#F1F5F9"
+            />
+          </svg>
+        </div>
         
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left', maxWidth: '650px' }}>
           <h1 style={{ fontSize: 64, fontWeight: 900, color: '#F1F5F9', margin: 0, textTransform: 'uppercase', letterSpacing: '-2px', lineHeight: 1.1 }}>
